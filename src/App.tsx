@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import logo from "./logo.svg";
-import { Counter } from "./features/counter/Counter";
 import "./App.css";
+import { getData } from "./api/covid";
 
 function App() {
+  useEffect(() => {
+    getData();
+  }, []);
   return (
     <div className="App">
       <p>aa</p>
