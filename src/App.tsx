@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import { getData } from "./api/covid";
+import { getCountriesDate, getDailyDate, getData } from "./api/covid";
 
 function App() {
   useEffect(() => {
-    getData();
+    getCountriesDate("japan");
   }, []);
   return (
     <div className="App">
