@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import { getCountriesDate, getDailyDate, getData } from "./api/covid";
+import Cards from "./features/covid/Cards/Cards";
 
 function App() {
   useEffect(() => {
@@ -9,7 +9,7 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <p>aa</p>
+      <Cards></Cards>
     </div>
   );
 }
